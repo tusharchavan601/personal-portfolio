@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About me</li>
+                <li>Skills</li>
+                <li class="btn"><button onclick="openModal()" class="signupbutton"> Contact Me</button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="home">
+        <div class="left">
+            <p> Hi, <br>I'm <span class="orangerred">Tushar</span> Chavan</p>
+            <p class="subheading">Frontend developer</p>
+        </div>
+        <div class="image">
+            <img src="https://daspal.com/wp-content/uploads/2020/09/development-vector.png" alt="">
+        </div>
+    </div>
+
+    <div class="aboutme orangerred">
+        <h1>About Me</h1>
+    </div>
+
+    <div class="leftimg">
+        <img src="tushar.jpg.jpg" alt="">
+    </div>
+    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo ad sed fugit natus?
+        Exercitationem sit quo alias minus est accusamus atque libero sed id hic doloribus ratione provident voluptas,
+        maxime quidem dolorum numquam fugit suscipit corrupti et cupiditate nulla! Culpa dolore est fugit atque,
+        similique eveniet enim aliquam minima? Non libero labore ullam, praesentium dolor dolores laborum harum error
+        natus voluptatibus voluptates velit beatae eum quae, autem corrupti aliquid itaque assumenda quam consequatur?
+        Quam!</div>
+
+    <div class="skills">
+        <h1 class="orangerred">My Skills</h1>
+    </div>
+    <div class="skills_section">
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>75%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>60%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>SQL</p>
+                    <P>20%</P>
+                </div>
+                <div class="bar">
+                    <span class="sass"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>25%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>C</p>
+                    <P>40%</P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Python</p>
+                    <P>35%</P>
+                </div>
+                <div class="bar">
+                    <span class="node"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="signup">
+                <form>
+                    <h1>Contact Me</h1>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer01">First name :</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01"
+                                placeholder="First name" required>
+
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Last name :</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02"
+                                placeholder="Last name" required>
+
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServerUsername">Username :</label>
+
+
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+
+
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="validationServer02">Email :</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02"
+                                placeholder="abc@gmail.com" required>
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+
+
+                        </div>
+                        <div class="col-md-3 mb-3">
+
+
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationServer05">Message :</label>
+                            <input type="text" class="form-control is-invalid" id="validationServer05"
+                                placeholder="Type your message here..." required>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                I Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script>
+            function openModal() {
+                document.getElementById('myModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+        </script>
+
+
+
+</body>
+
+</html>

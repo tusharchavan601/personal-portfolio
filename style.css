@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Nova+Cut&family=Roboto:wght@300&family=Saira:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'roboto';
+    color: black;
+}
+
+.navbar {
+    margin-left: 50vw;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    padding: 1.5rem;
+    margin-left: 3rem;
+    color: black;
+    font-size: 20px;
+    font-family: 'roboto';
+}
+
+nav {
+    display: flex;
+    position: sticky;
+}
+
+.orangerred {
+    color: orangered;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    color: orangered;
+    font-weight: bold;
+
+}
+
+.line {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.left p {
+    font-size: 60px;
+    font-weight: 1000;
+    font-family: roboto;
+    color: black;
+}
+
+.left {
+    margin: 200px;
+
+}
+
+.left .subheading {
+    font-size: 30px;
+    font-weight: 10;
+    font-family: roboto;
+
+}
+
+.image img {
+    width: 500px;
+    margin-left: 60vw;
+    mix-blend-mode: darken;
+    margin-top: -60vh;
+    margin-left: 55vw;
+}
+
+.aboutme {
+    display: flex;
+    margin-top: 40vh;
+    margin-left: 44vw;
+}
+
+.aboutme h1 {
+    font-size: 50px;
+    font-family: roboto;
+}
+
+.leftimg img {
+    height: 40vh;
+    border-radius: 200px;
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    width: 45vw;
+    margin-left: 44vw;
+    margin-top: -35vh;
+    font-size: 20px;
+}
+
+.skills {
+
+    font-family: roboto;
+    display: flex;
+    margin-top: 40vh;
+    margin-left: 44vw;
+}
+
+.skills h1 {
+    font-size: 50px;
+}
+
+.one {
+    height: 20vh;
+
+}
+
+.skills_section {
+    margin-top: -20vh;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills_head {
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.skills_head h2 {
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.skills_head h2 span {
+    color: #e74d06;
+}
+
+.skills_main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skills_main .skill_bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill_bar .info p:nth-child(2) {
+    font-weight: 500;
+}
+
+.skill_bar .bar {
+    height: 10px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.skill_bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #e74d06;
+    border-radius: 25px;
+}
+
+.skill_bar .bar .html {
+    width: 90%;
+    animation: html 2s;
+}
+
+@keyframes html {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skill_bar .bar .css {
+    width: 85%;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skill_bar .bar .sass {
+    width: 20%;
+    animation: sass 2s;
+}
+
+@keyframes sass {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+.skill_bar .bar .js {
+    width: 60%;
+    animation: css 2s;
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skill_bar .bar .react {
+    width: 30%;
+    animation: react 2s;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.skill_bar .bar .node {
+    width: 75%;
+    animation: node 2s;
+}
+
+@keyframes node {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 30vw;
+    height: 30vw;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    background-repeat: no-repeat;
+    color: black;
+    line-height: 2;
+
+}
+
+.modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+}
+.signupbutton {
+    background-color: transparent;
+    border: none;
+    margin-top: 0px;
+    color: black;
+    font-size: 20px;
+}
+li :hover{
+    cursor: pointer;
+    color: orangered;
+   
+}
+
+
+form {
+    margin-left: 5vw;
+   
+}
+.col-md-5 #validationServer02{
+    margin-left: 2vw;
+}
+#validationServer05{
+    height: 8vh ;
+}
+form button {
+    width: 20vw;
+    background-color: orangered;
+    height: 6vh;
+    margin-top: 3vh;
+    color: black;
+    margin-right: 1vh;
+    border-radius: 10PX;
+}
